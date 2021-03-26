@@ -1,0 +1,22 @@
+﻿@RenderSection("Scripts", false)
+
+@*Layout page for entire app*@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Joel Hilton Movies</title>
+    <link rel="shortcut icon icon" type="image/x-icon" href="~/favicon.ico" />
+</head>
+<body>
+    <h1>@ViewBag.Title</h1>
+    <a asp-action="Index">Home</a> |
+    <a asp-action="MyPodcasts">My Podcasts</a> |
+    <a asp-action="EnterMovie">Enter a Movie</a> |
+    <a asp-action="List">List of Movies</a>
+    @RenderBody()
+    <br />
+    <br />
+    <footer>Joel Hilton, Copyright 2021</footer>
+</body>
+</html>
